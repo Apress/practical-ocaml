@@ -1,0 +1,4 @@
+SOURCES = syslog_parser.mly syslog_lexer.mll
+RESULT = syslog.exe
+OUTPUT = byte-code
+include /usr/local/share/OCamlMakefile

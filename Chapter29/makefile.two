@@ -1,0 +1,12 @@
+
+
+all:
+	camlp4o pa_extend.cmo q_MLast.cmo pr_dump.cmo check_two.ml -o check_two.ppo
+	camlp4o pa_extend.cmo q_MLast.cmo check_two.ml -o check_two.ast
+	ocamlc -c -I +camlp4 -pp 'camlp4o pa_extend.cmo q_MLast.cmo pr_dump.cmo' check_two.ml
+clean:
+	rm -f prog *.ppo *.ppr *.cmo *.cmi *.o *.cmx *.ast *~
+
+checker: check_test_two.ml
+	ocamlc -o $@ -I +camlp4 -pp 'camlp4o pa_extend.cmo q_MLast.cmo pr_dump.cmo ./check_two.cmo' unix.cma $<
+

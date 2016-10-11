@@ -1,0 +1,6 @@
+digraph G {
+	"client" -> "simple_http";
+	"simple_http" -> "link_harvest";
+	"normalize_link" -> "link_harvest";
+	"link_harvest" -> "threaded_link_harvest";
+}

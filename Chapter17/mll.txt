@@ -1,0 +1,15 @@
+2004-10-11 10:14:00 [ Quillen ] connected client #1142345 port 23
+	BEGIN_MESSAGE: client clear :END_MESSAGE
+2004-10-11 10:14:00 [ Quillen ] connected peer 10.10.10.20
+2004-10-11 10:14:30 [ Quillen ] heartbeat recieved from 10.10.10.1
+2004-10-11 10:14:31 [ Adams ] command client #1132423 port 23/9 US
+	BEGIN_MESSAGE: client not clear :END_MESSAGE
+	AUDIT: level 1
+2004-10-11 10:14:38 [ Quillen ] disconnected peer 10.10.10.42
+	BEGIN_MESSAGE: abend disconnect :END_MESSAGE
+2004-10-11 10:20:24 [ Sampson ] disconnected peer 10.10.10.25
+	BEGIN_MESSAGE: abend disconnect
+Development Server :END_MESSAGE
+2004-10-11 10:14:30 [ Adams ] heartbeat recieved from 10.10.10.1
+2004-10-11 10:14:31 [ Adams ] disconnected client #1142345 port 23
+	BEGIN_MESSAGE: logged out :END_MESSAGE

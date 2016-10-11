@@ -1,0 +1,6 @@
+SOURCES = spam.mll spam_server.ml server.ml
+RESULT  = server
+THREADS = yes
+PACKS: unix
+all: native-code
+-include /usr/local/share/OCamlMakefile

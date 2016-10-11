@@ -1,0 +1,8 @@
+digraph G {
+	"Block until new request" -> "Got Request";
+	"Got Request" -> "Fetch URL" -> "Block until info sent";
+	"Block until info sent" -> "info sent" -> "Block until new request";
+	"Got Request" -> "Shutdown Request";
+	"Shutdown Request" -> "Block until Shutdown Notification is sent";
+	"Block until Shutdown Notification is sent" -> "Notification Sent" -> "Exit";
+}

@@ -1,0 +1,16 @@
+dep:
+	ocamldep *.mli *.ml > .depend
+
+-include .depend
+
+%.ml: %.mll
+
+	ocamllex $<
+
+%.cmo: %.ml
+
+	ocamlc -c $<
+
+%.exe: %.cmo
+
+	ocamlc -o $@ $<

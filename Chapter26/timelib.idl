@@ -1,0 +1,30 @@
+quote(C,"#define __USE_XOPEN");
+quote(C,"#include <time.h>");
+struct tm {
+  int     tm_sec;         /* seconds */
+  int     tm_min;         /* minutes */
+  int     tm_hour;        /* hours */
+  int     tm_mday;        /* day of the month */
+  int     tm_mon;         /* month */
+  int     tm_year;        /* year */
+  int     tm_wday;        /* day of the week */
+  int     tm_yday;        /* day in the year */
+  int     tm_isdst;       /* daylight saving time */
+};
+
+typedef double time_t;
+typedef int size_t;
+
+time_t time(time_t * t);
+struct tm *localtime(const time_t *timep);
+struct tm *gmtime(const time_t *timep);
+[string] const char *asctime([in] const struct tm *t);
+time_t mktime(struct tm *tm);
+
+double difftime(time_t time1,time_t time2);
+
+int strftime([in,out,string] char *s, size_t max, [string] const char *format,
+		const struct tm *tm);
+
+[string] char *strptime([string] const char *s,[string] const char *format, [in,out] struct tm *tm);
+

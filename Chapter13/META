@@ -1,0 +1,7 @@
+requires = ""
+description = "Account Management Example"
+version = "From the Apress Book"
+directory = "^"
+browse_interfaces = " Test "
+archive(byte) = "account.cma"
+archive(native) = "account.cmxa"

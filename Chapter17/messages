@@ -1,0 +1,11 @@
+Nov 22 17:38:25 bebop kernel: Kernel logging (proc) stopped.
+Nov 22 17:38:25 bebop kernel: Kernel log daemon terminating.
+Nov 22 17:38:25 bebop exiting on signal 15
+Nov 22 21:04:46 bebop syslogd 1.4.1#17: restart.
+Nov 22 21:04:46 bebop kernel: klogd 1.4.1#17, log source = /proc/kmsg started.
+Nov 22 21:04:46 bebop kernel: Inspecting /boot/System.map-2.6.12
+Nov 22 21:04:46 bebop kernel: Loaded 29754 symbols from /boot/System.map-2.6.12.
+Nov 22 21:04:46 bebop kernel: Symbols match kernel version 2.6.12.
+Nov 22 21:04:46 bebop kernel: No module symbols loaded - kernel modules not enabled. 
+Nov 22 21:04:46 bebop kernel: Linux version 2.6.12 (root@Knoppix) (gcc-Version 3.3.6 (Debian 1:3.3.6-7)) #2 SMP Tue Aug 9 23:20:52 CEST 2005
+Nov 22 21:04:46 bebop kernel: BIOS-provided physical RAM map:

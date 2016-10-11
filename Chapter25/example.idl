@@ -1,0 +1,2 @@
+quote(C,"#include <math.h>");
+int pythag(int m,int n);

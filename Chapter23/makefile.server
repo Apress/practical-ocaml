@@ -1,0 +1,5 @@
+SOURCES = id3.ml Server.ml shoutcast.ml
+RESULT= shoutcast
+PACKS = threads,unix
+all: byte-code
+include /usr/local/lib/Ocaml/OCamlMakefile 

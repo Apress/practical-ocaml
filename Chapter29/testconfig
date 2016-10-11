@@ -1,0 +1,11 @@
+Hi {
+(** hello *)
+	set bill = "100";
+	set ted = "50";
+	set harry = "3.14159"
+}
+
+Another {
+	set bill = "100.0"
+}
+	

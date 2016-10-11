@@ -1,0 +1,18 @@
+hi {
+(** hello *)
+	set bill = "100";
+	set ted = env "HOME";
+	set harry = 3.14159;
+	set tom = exec "echo 1 + 2";
+	works {
+	   set other = 3;
+	   nested {
+		set reallynest = 40;
+	   }
+	}
+}
+
+another {
+
+	set bill = 100.0;
+}

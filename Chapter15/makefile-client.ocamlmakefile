@@ -1,0 +1,5 @@
+SOURCES = spam.mll spam_server.ml client_app.ml
+RESULT  = client
+all: native-code
+PACKS: unix
+-include /opt/godi/share/OCamlMakefile

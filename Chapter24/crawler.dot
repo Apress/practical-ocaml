@@ -1,0 +1,12 @@
+digraph G {
+	"Poll for new events" -> "None" -> "Send Requests to threads";
+	"Send Requests to threads" -> "Unseen URL available" -> "Poll Threads";
+	"Poll Threads" -> "Thread Available" -> "Send Unseen URL, remove URL from set" -> "Poll for new events";
+	"Poll Threads" -> "No Thread Available" -> "Return Set of URLs";
+	"Return Set of URLs" -> "Poll for new events";
+	"Send Requests to threads" -> "No URL available" -> "Return Shutdown Type";
+	"Return Shutdown Type" -> "Send Shutdown to Threads" -> "Poll for new events";
+	"Poll for new events" -> "Info Returned" -> "Process Info" -> "Poll for new events";
+	"Poll for new events" -> "Thread Reports Shutdown" -> "Remove thread from list" -> "No More Threads" -> "Exit";
+	"Remove thread from list" -> "More Threads" -> "Poll for new events";
+}

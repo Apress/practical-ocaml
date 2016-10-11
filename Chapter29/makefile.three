@@ -1,0 +1,7 @@
+all:
+	camlp4o pa_extend.cmo q_MLast.cmo pr_dump.cmo pa_simple.ml -o pa_simple.ppo
+	camlp4o pa_extend.cmo q_MLast.cmo pa_simple.ml -o pa_simplen.ast
+	ocamlc -c -I +camlp4 -pp 'camlp4o pa_extend.cmo q_MLast.cmo pr_dump.cmo' pa_simple.ml
+clean:
+	rm -f prog *.ppo *.ppr *.cmo *.cmi *.o *.cmx *.ast *~
+

@@ -1,0 +1,6 @@
+name = "time"
+version = "1.0"
+description = "time formating and manipulation commands"
+requires = "unix"
+archive(byte) = "time.cma"
+archive(native) = "time.cmxa"
